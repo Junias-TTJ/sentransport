@@ -1,0 +1,78 @@
+.stat-reseau {
+  margin-bottom: 24px;
+}
+
+.stat-reseau h2 {
+  margin-bottom: 14px;
+  color: #1f2933;
+}
+
+.stat-etiquettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  
+}
+
+.stat-etiquette {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-left: 4px solid #0a6e31;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 120px;
+  height: 120px;
+  padding: 14px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-etiquette:hover{
+  background-color: #d9ece1;
+}
+
+.stat-valeur {
+  display: block;
+  color: #0a6e31;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  display: block;
+  color: #555555;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .stat-etiquettes {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stat-etiquette {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stat-valeur {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .stat-etiquette {
+    width: 100%;
+  }
+}
